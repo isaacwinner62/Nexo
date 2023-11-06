@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.crypto-header {
+      margin-bottom: 120px;
+}
+
+.first-p {
+      font-weight: 900;
+      opacity: 0.8;
+      margin-bottom: 70px;
+}
+
+ol {
+  margin-bottom: 70px;
+}
+
+ol li {
+      font-weight: 800;
+      opacity: 0.8;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin-bottom: 20px;
+}
+
+.first-ul {
+  margin-bottom: 70px;
+}
+
+.first-ul li {
+  margin-bottom: 20px;
+}
+
+.first-ul span {
+  font-weight: 800;
+  opacity: 0.8;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.second-ul li {
+  font-weight: 800;
+  opacity: 0.8;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.connect-btn {
+  background-color: blue;
+  text-align: center;
+  padding: 20px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.connect-btn a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.footer {
+  color: blue;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.giveaway-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1,
+h2,
+h3 {
+  color: #333;
+}
+p {
+  line-height: 1.6;
+}
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+.social-links li {
+  display: inline;
+  margin-right: 10px;
+}
